@@ -1,0 +1,231 @@
+*  { 
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans TC','sans-serif';
+    line-height: 1.6;
+     background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: blanchedalmond;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight:bold ;
+    color: salmon;
+}
+
+.nav-link{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.nav-link a{
+    text-decoration: none;
+    color: firebrick;
+    transition: 0.3s;
+}
+.nav-link a:hover{
+    color: blue;
+}
+.btn-chat{
+    background-color: darkolivegreen;
+    color: cornflowerblue;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+
+}
+
+.hero-content{
+    flex: 1;
+}
+
+.hero-content h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.highlight{
+    color: aqua;
+}
+
+.hero-content p{
+    font-size: 1rem;
+    color: darkgray;
+    margin-bottom: 30px;
+    line-height: 1.6; 
+    max-width: 500px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap:20px
+}
+
+button{
+    padding: 10px 23px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-primary{
+    background-color: aqua;
+    color: #1e293b;
+}
+
+.btn-secondary{
+    background-color: aquamarine;
+    color: darkblue;
+}
+button:hover{opacity: 0.5;}
+
+.hero-image img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+.hero-image img{
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.chat-box{
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#user-input{
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+    background-color: maroon;
+    color: #f1f5f9;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+#user-input:focus{
+    border-color:cornflowerblue;
+    box-shadow: 0 0 0 2px rgba(56,189,248,0.2);
+}
+
+#ai-response{
+    font-size: 1.1rem;
+    color: darkkhaki;
+    font-weight: bold;
+    min-width: 1.6rem;
+}
+
+@media (max-width:800px) {
+    .navbar{
+        padding: 15px 5%;
+    }
+    .nav-link{
+        display: none;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+    .hero-content h1{
+        font-size: 2rem;   
+    }
+    .hero-buttons{
+        justify-content: center;
+    }
+    
+    .hero-image{ 
+        margin-top: 40px; 
+        padding: 12px 10px; 
+    }
+    
+}
+
+body{
+    transition: background-color 0.5s, color 2s;
+}
+/*淺色主題*/
+body.theme-light {
+    background-color: #f1f5f9;
+    color: #0f172a;
+}
+body.theme-light .navbar {
+    background-color: skyblue;
+}
+body.theme-light .logo {
+    color: palevioletred;
+}
+body.theme-light .nav-links a {
+    color: darkolivegreen;
+}
+/*駭客主題*/
+body.theme-matrix {
+    background-color: #000000;
+    color: #00ff00;
+}
+body.theme-matrix .navbar {
+    background-color: #111111;
+}
+body.theme-matrix .logo,body.theme-matrix .highlight {
+    color: #00ff00;
+}
+body.theme-matrix .nav-links a {
+    color: #00aa00;
+}
+
+.todo-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid darkgreen;
+    background-color: #f9f9f9;
+    color: darkolivegreen;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: darkred;
+    text-decoration: line-through;
+    opacity: 0.6;
+}
