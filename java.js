@@ -49,6 +49,9 @@ SendBtn.addEventListener('click',function(){
         document.body.className='theme-matrix';
         aiResponse.innerText='AI助理：已啟動『駭客矩陣模式』';
       }
+      else if (userMessage.includes('你好')||userMessage.includes('安安')){
+        aiResponse.innerText='AI助理：東吳大學是個學習網頁設計最棒的地方！';
+      }
       else if (userMessage.includes('深色')||userMessage.includes('晚上')){
         document.body.className='';
         aiResponse.innerText='AI助理：已為您恢復至『預設深色模式』。';
